@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAcc.master.cs" Inherits="Account_MasterPageAcc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery-latest.min.js" type="text/javascript"></script>   
+    <script src="../script.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header" style="height:150px;">
+            <div class="title">
+              <p align="center">
+        
+                </p>
+            </div>
+        </div>  
+         
+        <div id="cssmenu">
+                        <ul>
+                            
+                            <li><a href="../About.aspx">درباره سامانه</a></li>
+                            <li><a href="../Help.aspx">راهنما</a></li>
+                            <li><a href="../Setting.aspx">تنظیمات</a></li>
+                            <li><a href="../Modify.aspx">مدیریت</a></li>
+                            <li><a href="../Update.aspx">ویرایش</a></li>
+                            <li><a href="../Insert.aspx">افزودن</a></li>
+                            <li><a href="../Search.aspx">جستجو</a></li>
+                            <li class='active'><a href="../HomeLogin.aspx">صفحه اصلی</a></li>  
+                        
+                        </ul>
+                        </div>
+        
+            <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+        
+    </div>
+    </form>
+</body>
+</html>
